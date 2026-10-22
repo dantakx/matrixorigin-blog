@@ -1,5 +1,5 @@
 ---
-title: "MatrixOrigin Releases the Enterprise AI Infrastructure White Paper 2026"
+title: "Enterprise AI Infrastructure White Paper 2026"
 author: MatrixOrigin
 description: "When AI moves from generating answers to carrying business tasks, the hard problem is state, not the model. This white paper presents AI State lifecycle management, the six components of the MOI platform, and measured results from four customer scenarios."
 tags: ["Whitepaper"]
@@ -15,11 +15,7 @@ translations:
   zh: enterprise-ai-infrastructure-white-paper-2026
 ---
 
-# MatrixOrigin Releases the Enterprise AI Infrastructure White Paper 2026
-
-*When AI moves from generating answers to carrying business tasks, the hard problem is state, not the model.*
-
-MatrixOrigin has released the Enterprise AI Infrastructure White Paper 2026.
+# Enterprise AI Infrastructure White Paper 2026
 
 For the past two years, across procurement, document processing, bid preparation, recruiting, and many other enterprise settings, we kept confirming one thing. When AI moves from generating an answer to carrying a business task that continues, what an enterprise has to manage is no longer the model. It is the data, the context, the memory, and the execution state the AI depends on.
 
@@ -107,6 +103,4 @@ The value of enterprise AI has to be proved by continuous operation. After state
 
 This white paper is how we think about building AI infrastructure, and the experience accumulated across a large number of real scenarios.
 
-The full Enterprise AI Infrastructure White Paper 2026 and the companion Playbook are available now.
-
-📥 **[Download the white paper](https://matrixorigin.io/whitepaper)** — the full Enterprise AI Infrastructure White Paper 2026 and companion Playbook are available now at the MatrixOrigin whitepaper center.
+The full Enterprise AI Infrastructure White Paper 2026 and the companion Playbook are available now — click **[the white paper](https://matrixorigin.io/whitepaper)** for a free download.
