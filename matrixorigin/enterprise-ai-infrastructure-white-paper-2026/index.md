@@ -2,7 +2,7 @@
 title: "《企业级 AI 基础设施白皮书 2026》"
 author: MatrixOrigin
 description: "当 AI 从生成回答走向持续承担业务任务，企业真正需要管理的不再是模型本身，而是 AI 依赖的数据、上下文、记忆与执行状态。本文解读 AI State 的全生命周期管理，以及 MOI 平台六大组件与四个客户的场景实践。"
-tags: ["白皮书下载"]
+tags: ["白皮书"]
 keywords: ["企业级 AI 基础设施", "AI State", "MOI", "白皮书", "MatrixOne"]
 date: "2026-10-22T17:00:00+08:00"
 publishTime: "2026-10-22T17:00:00+08:00"
