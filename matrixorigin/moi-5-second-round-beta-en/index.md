@@ -25,7 +25,7 @@ Let us be specific about eligibility for this round:
 
 **Existing activated users:** users already activated in the first round can continue with their original accounts — no need to re-register.
 
-**New users:** users who haven't registered yet are welcome to join the Waitlist (https://uc.moi.matrixorigin.cn/register?lang=en-US). When the next round of beta opens, you'll receive the invitation first and lock in your experience slot ahead of time.
+**New users:** users who haven't registered yet are welcome to join the [Waitlist](https://uc.moi.matrixorigin.cn/register?lang=en-US). When the next round of beta opens, you'll receive the invitation first and lock in your experience slot ahead of time.
 
 ## Unlock More Beta Benefits
 

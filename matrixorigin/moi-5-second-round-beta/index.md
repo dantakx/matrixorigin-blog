@@ -25,7 +25,7 @@ translations:
 
 **首批已经激活的用户**，使用原账户即可进入，无需重新注册。
 
-**尚未登记的用户**，欢迎加入 Waitlist 名单https://uc.moi.matrixorigin.cn/register完成登记。下一轮公测开放时，您会第一时间收到邀请，提前锁定体验资格。
+**尚未登记的用户**，欢迎加入 [Waitlist](https://uc.moi.matrixorigin.cn/register) 名单完成登记。下一轮公测开放时，您会第一时间收到邀请，提前锁定体验资格。
 
 ## 解锁更多公测福利
 
