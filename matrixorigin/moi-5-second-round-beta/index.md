@@ -1,7 +1,7 @@
 ---
 title: "MOI 5.0 开启第二批公测，解锁更多福利"
 author: MatrixOrigin
-description: "MOI 5.0 第二批公测今日开放，面向 Waitlist 名单及受邀用户，新增文档与邮件直接读入能力：新激活账户赠 1,000 Credit，已有客户每人再送 500 Credit；每条有效反馈再赠 200 Credit。"
+description: "MatrixOne Intelligence 5.0 正式开启第二批公测，新增的文档与邮件直接读入能力，欢迎带着真实的业务需求来体验。"
 tags: ["新闻"]
 keywords: ["MOI 5.0", "第二批公测", "企业 AI 基础设施", "MatrixOne Intelligence", "Credit"]
 date: "2026-10-23T17:00:00+08:00"
