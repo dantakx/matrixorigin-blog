@@ -112,5 +112,3 @@ The enduring investments are proprietary data, business knowledge, validated wor
 As intelligence becomes easier to acquire, the defining question is what an enterprise can create with it—and whether that value compounds into capabilities it truly owns.
 
 **Turn enterprise data into enterprise intelligence.**
-
-MatrixOrigin  |  Enterprise AI Infrastructure

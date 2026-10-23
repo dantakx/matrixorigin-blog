@@ -112,5 +112,3 @@ MatrixOne 面向企业数据管理与版本化；MatrixOne Intelligence 关注�
 当通用智能越来越容易获得，真正重要的是企业能够用它创造什么，以及这些创造能否沉淀为自己的长期能力。
 
 **让企业的数据，成为企业自己的智能。**
-
-MatrixOrigin  |  Enterprise AI Infrastructure
