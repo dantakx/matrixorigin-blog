@@ -2,13 +2,13 @@
 title: "Join the MOI 5.0 Second-Round Public Beta — Unlock More Benefits"
 author: MatrixOrigin
 description: "The MOI 5.0 second-round public beta opens today for Waitlist and invited users, featuring new direct document and email ingestion: 1,000 Credits for newly activated accounts, 500 Credits for every existing customer, and 200 Credits for each valid piece of feedback."
-tags: ["Product Center"]
+tags: ["News"]
 keywords: ["MOI 5.0", "Public Beta", "Enterprise AI Infrastructure", "MatrixOne Intelligence", "Credits"]
 date: "2026-10-23T17:00:00+08:00"
 publishTime: "2026-10-23T17:00:00+08:00"
 image:
-  "1": "/images/blog-covers/product.png"
-  "235": "/images/blog-covers/product.png"
+  "1": "/images/blog-covers/news.png"
+  "235": "/images/blog-covers/news.png"
 lang: en
 status: published
 translations:
