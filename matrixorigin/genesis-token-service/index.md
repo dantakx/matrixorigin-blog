@@ -12,11 +12,11 @@ keywords:
   - Token efficiency
   - AI infrastructure
   - Astra
-publishTime: '2026-10-26T17:00:00+08:00'
+publishTime: '2026-10-24T17:00:00+08:00'
 image:
   '1': /images/blog-covers/product.png
   '235': /images/blog-covers/product.png
-date: '2026-10-26T17:00:00+08:00'
+date: '2026-10-24T17:00:00+08:00'
 lang: en
 ---
 
