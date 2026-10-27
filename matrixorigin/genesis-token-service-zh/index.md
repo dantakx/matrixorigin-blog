@@ -18,6 +18,9 @@ image:
   '235': /images/blog-covers/product.png
 date: '2026-10-24T17:00:00+08:00'
 lang: zh
+status: published
+translations:
+  en: genesis-token-service
 ---
 
 随着 AI 从简单问答走向复杂的智能体应用，Token 正成为重要的基础资源。但 Token 单价下降，并不意味着应用总成本同步降低：冗余上下文、重复推理和复杂执行流程，都可能带来额外消耗。
