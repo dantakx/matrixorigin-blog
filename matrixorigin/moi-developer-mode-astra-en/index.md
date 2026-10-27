@@ -126,8 +126,6 @@ An agent's report that a failure has been resolved is not sufficient evidence on
 
 ## Installation and usage
 
-The second round of the MOI 5.0 public beta is open to waitlisted and invited users. Users who registered during the first round but have not yet received an invitation will be invited in this round; users who already activated an account can continue using it without registering again. Newly activated accounts receive 1,000 credits, and every existing account receives an additional 500 credits automatically. Credits awarded in the first round remain in the original account. Each piece of valid feedback earns 200 credits. Users who have not registered can join the waitlist for the next round. See the [second-round public beta announcement](https://matrixorigin.cn/blog/moi-5-second-round-beta?v=20261023_d49ee7b) for full eligibility and reward details.
-
 To use Astra through MOI developer mode, run the following three commands in a macOS or Linux terminal: install Astra and moi-cli, sign in to your MOI account in the browser, and start a conversation.
 
 ```bash
