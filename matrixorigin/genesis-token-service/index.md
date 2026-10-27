@@ -18,6 +18,9 @@ image:
   '235': /images/blog-covers/product.png
 date: '2026-10-24T17:00:00+08:00'
 lang: en
+status: published
+translations:
+  zh: genesis-token-service-zh
 ---
 
 As AI evolves from simple chat into complex agentic applications, tokens are becoming a foundational resource. Yet lower per-token prices do not automatically translate into lower application costs. Redundant context, repeated reasoning, and multi-step agent execution can all increase total consumption.
