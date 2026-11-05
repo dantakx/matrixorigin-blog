@@ -95,7 +95,7 @@ Complete designated platform tasks to earn up to **1,500 Credits** in total — 
 
 **Invite Friends: Both Sides Get 500 Credits**
 
-Once a friend registers and activates through your invitation link, **both you and your friend receive 500 Credits each — up to 3 friends invited**.
+Once a friend registers and activates through your invitation link, **both you and your friend receive 500 Credits each — up to 10 friends invited**.
 
 Experience credits previously claimed remain in your original account and will not be cleared by this public beta. All platform billing items are priced in Credits; specific prices can be found under "Product Pricing" in the Billing Center.
 
