@@ -1,4 +1,4 @@
-\---  
+---
 title: "MatrixOrigin Wins Bid for Shenzhen Unicom Smart Manufacturing AI Project, Advancing AI Deployment in Electronics Manufacturing"  
 author: MatrixOrigin  
 description: "MatrixOrigin has won the bid for the Shenzhen Unicom Smart Manufacturing AI Application Project and signed the contract. Together with Shenzhen Unicom, MatrixOrigin will deliver five AI scenarios—precision product recommendation, equipment maintenance, energy management, production insight, and supplier evaluation—for a listed electronics manufacturer in Shenzhen."  
@@ -13,7 +13,7 @@ lang: en
 status: published  
 translations:  
   zh: shenzhen-unicom-smart-manufacturing-ai-project  
-\---
+---
 
 MatrixOrigin has been awarded the bid for the Shenzhen Unicom Smart Manufacturing AI Application Project​ and has signed the contract. The project has now entered the development and delivery phase. Together with Shenzhen Unicom, MatrixOrigin will serve a listed electronics manufacturer in Shenzhen, focusing on five business scenarios—precision product recommendation, equipment maintenance, energy management, production insight, and supplier evaluation—to integrate AI capabilities into the manufacturer's daily operations and production management workflows.
 

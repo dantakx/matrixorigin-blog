@@ -2,6 +2,43 @@
   "schemaVersion": 1,
   "items": [
     {
+      "id": "moi-5-ga-launch",
+      "enabled": true,
+      "order": -10,
+      "variant": "split",
+      "startsAt": "2026-11-20",
+      "endsAt": null,
+      "content": {
+        "zh": {
+          "tag": "产品发布",
+          "date": "2026.11.20",
+          "title": "MatrixOne Intelligence 5.0 GA 发布",
+          "desc": "让企业 AI 扎根数据，真正走进业务。用可复用的算子、工作流和智能体，把企业数据接入日常业务。",
+          "cta": "阅读发布公告"
+        },
+        "en": {
+          "tag": "Product Launch",
+          "date": "Nov 20, 2026",
+          "title": "MatrixOne Intelligence 5.0 GA Release",
+          "desc": "Put enterprise data to work with reusable operators, workflows, and AI agents.",
+          "cta": "Read the announcement"
+        }
+      },
+      "image": {
+        "desktop": "/content/homepage/images/moi5-waitlist.jpg",
+        "alt": {
+          "zh": "MatrixOne Intelligence 将企业数据连接到 AI 工作流",
+          "en": "MatrixOne Intelligence connects enterprise data to AI workflows"
+        },
+        "objectPosition": "center"
+      },
+      "destination": {
+        "kind": "blog",
+        "zh": "/blog/moi-5-ga-launch",
+        "en": "/blog/moi-5-ga-launch-en"
+      }
+    },
+    {
       "id": "series-a-funding",
       "enabled": true,
       "order": 10,
