@@ -1,7 +1,7 @@
 ---
 title: "60 Years of HTAP: Breakups and Reunions — Why the Agent Era Calls for a Clean-Slate Redesign"
 author: MatrixOrigin
-description: "At the first Rows & Columns Summit, Andy Pavlo traced 60 years of databases splitting and merging OLTP and OLAP — and concluded that no one has redesigned HTAP from first principles. MatrixOrigin argues that today's mainstream HTAP architectures are outdated for large-scale Agent workloads, and the way forward is One Engine + One Copy."
+description: "At the first Rows & Columns Summit, Andy Pavlo traced 60 years of databases splitting and merging OLTP and OLAP — and observed that almost no one has gone back to first principles to design an HTAP product truly built for the future. MatrixOrigin argues that today's mainstream HTAP architectures are outdated for large-scale Agent workloads, and the way forward is One Engine + One Copy."
 tags: ["Technical Insights"]
 keywords: ["HTAP", "MatrixOne", "Agent Workloads", "One Engine One Copy", "Data Branching"]
 date: "2026-11-20T17:00:00+08:00"
@@ -19,17 +19,17 @@ At this year's inaugural Rows & Columns Summit in San Francisco, held at the Con
 
 **OLTP and OLAP: together or apart?**
 
-The Opening Keynote went to Andy Pavlo, then head of ClickHouse Labs — a CMU database professor and one of the most beloved evangelists in the database world. Sharing the stage were DuckDB founder Hannes Mühleisen and leading systems experts from Google, OpenAI, Snowflake, and Databricks. The agenda ranged from the interoperability-layer debates around Apache Iceberg all the way to OpenAI's governance of a 70,000-dataset corpus. In short, everyone with real authority over HTAP was in the room that day.
+The Opening Keynote went to Andy Pavlo, then head of ClickHouse Labs — a CMU database professor and one of the most beloved evangelists in the database world. Sharing the stage were DuckDB founder Hannes Mühleisen and leading systems experts from Google, OpenAI, Snowflake, and Databricks. The agenda ranged from the interoperability-layer debates around Apache Iceberg all the way to how OpenAI's internal data agents search and analyze across its roughly 70,000 datasets. In short, everyone with real authority over HTAP was in the room that day.
 
 Andy Pavlo's talk was as witty as ever. Its title: "Broken Dreams. Broken Promises. Broken Marriages." — with the subtitle delivering the real subject: 60 years of "mixing" transactional and analytical workloads.
 
-![1.jpg](./images/1.jpg)
+![Photo of Andy Pavlo delivering the opening keynote on stage at the Rows & Columns Summit](./images/1.jpg)
 
 Andy Pavlo opening the Rows & Columns Summit
 
 He opened with a running joke about Oracle founder Larry Ellison's several marriages, using him as a lens for a more serious topic: the "breakups and reunions" of database architecture over 60 years.
 
-![2.jpg](./images/2.jpg)
+![Chart of the 60-year database architecture timeline, threaded through Larry Ellison's career](./images/2.jpg)
 
 A 60-year architecture timeline with Larry Ellison as the recurring thread
 
@@ -39,7 +39,7 @@ But behind the jokes, the conclusion was sharp: **across 60 years and six genera
 
 The database industry follows a fascinating cycle: one system, or two?
 
-![3.jpg](./images/3.jpg)
+![Pendulum diagram of transactional and analytical workloads swinging between unified and separated architectures](./images/3.jpg)
 
 Transactional and analytical workloads: the pendulum from "unified" to "separated" and back to "unified" again
 
@@ -51,7 +51,7 @@ Transactional and analytical workloads: the pendulum from "unified" to "separate
 
 **The Data Lake Era**: As data volumes exploded, analytical replicas moved to object storage, and the model of "two engines sharing one copy of data" came back into favor.
 
-![4.jpg](./images/4.jpg)
+![Slide of the 2020s data lake era architecture](./images/4.jpg)
 
 The 2020s: the data lake era — "the least successful idea" makes a comeback
 
@@ -61,15 +61,15 @@ The only clear trend of the past few years has been: data moving to the cloud, a
 
 In his talk, Andy summarized the HTAP topologies on the market today into three forms:
 
-![5.jpg](./images/5.jpg)
+![Diagram of the data flows and storage relationships across the three HTAP topologies](./images/5.jpg)
 
 Three HTAP topologies: Two Copies Managed, Read-Time Merge, and Two Engines One Copy
 
 **OLTP-first with OLAP as an add-on, maintaining two copies of data** (Two Copies, Managed): e.g., TiDB, Google F1 Lightning, ClickHouse;
 
-**Transforming OLTP data into OLAP-optimized storage at read time** (Read-Time Merge): e.g., the Postgres extension pg_mooncake;
+**Writing out columnar Parquet in the background, then merging the latest in-memory changes with the flushed data at analytical query time** (Read-Time Merge): e.g., the Postgres extension pg_mooncake;
 
-**Dual-engine designs built on data lakes** (Two Engines, One Copy): e.g., the Databricks Lakehouse.
+**Dual-engine designs built on data lakes** (Two Engines, One Copy): e.g., Databricks LTAP (Lakebase Postgres for OLTP, Lakehouse//RT for OLAP).
 
 Each approach has its trade-offs. But from MatrixOrigin's perspective — **whether you look at architectural scalability or ease of use, these designs are outdated for the large-scale Agent workloads that are coming, and they need to be reinvented.**
 
@@ -91,7 +91,7 @@ Looking ahead, MatrixOne will continue to expand its capabilities, delivering hi
 
 At the end of his talk, Andy offered a prediction: in the 2030s, databases will move toward further unification, driven by resource disaggregation and accelerators (GPUs, CXL memory).
 
-![6.jpg](./images/6.jpg)
+![Projected view of the 2030s: further database unification driven by resource disaggregation and GPU acceleration](./images/6.jpg)
 
 The 2030s, "The Glorious Future": further unification driven by resource disaggregation and GPU acceleration
 

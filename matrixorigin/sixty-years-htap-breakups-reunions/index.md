@@ -19,17 +19,17 @@ translations:
 
 **OLTP 与 OLAP，到底合还是分？**
 
-Opening Keynote 交给时任 ClickHouse Labs 负责人 Andy Pavlo——CMU 数据库教授、数据库行业最受欢迎的布道者之一。同台的还有 DuckDB 创始人 Hannes Mühleisen、Google、OpenAI、Snowflake、Databricks 的一线系统专家，议程从 Apache Iceberg 的互操作层之争一直聊到 OpenAI 的 7 万数据集治理。可以说，HTAP 领域最有发言权的人，那一天都在现场。
+Opening Keynote 交给时任 ClickHouse Labs 负责人 Andy Pavlo——CMU 数据库教授、数据库行业最受欢迎的布道者之一。同台的还有 DuckDB 创始人 Hannes Mühleisen、Google、OpenAI、Snowflake、Databricks 的一线系统专家，议程从 Apache Iceberg 的互操作层之争一直聊到 OpenAI 的内部数据 Agent 如何在约 7 万个数据集中查找与分析数据。可以说，HTAP 领域最有发言权的人，那一天都在现场。
 
 Andy Pavlo 的演讲依旧风趣幽默，其标题是「Broken Dreams. Broken Promises. Broken Marriages.（破碎的梦想、破碎的承诺、破碎的婚姻）」，副标题则是正题：60 年事务与分析负载的「混搭」史。
 
-![1.jpg](./images/1.jpg)
+![Andy Pavlo 在 Rows & Columns Summit 讲台发表开场演讲的照片](./images/1.jpg)
 
 Andy Pavlo 在 Rows & Columns Summit 现场开场
 
 他以 Oracle 创始人 Larry Ellison 的数段婚姻为引子，讲了一个更有意思的话题：数据库架构 60 年来的「分分合合」。
 
-![2.jpg](./images/2.jpg)
+![数据库架构 60 年演进时间轴图表，以 Larry Ellison 的经历为线索](./images/2.jpg)
 
 以 Larry Ellison 为「线索人物」的 60 年架构时间轴
 
@@ -39,7 +39,7 @@ Andy Pavlo 在 Rows & Columns Summit 现场开场
 
 数据库行业有一个有趣的周期律：一套系统，还是两套系统？
 
-![3.jpg](./images/3.jpg)
+![事务与分析负载在一体化与分离架构之间往复演进的钟摆曲线示意图](./images/3.jpg)
 
 事务与分析负载：从「一体化」到「分离」再到「回归一体化」的钟摆曲线
 
@@ -51,7 +51,7 @@ Andy Pavlo 在 Rows & Columns Summit 现场开场
 
 **数据湖时代**：随着数据规模暴涨，分析副本迁往对象存储，「两套引擎共享一份数据」的模式又回来了。
 
-![4.jpg](./images/4.jpg)
+![2020 年代数据湖时代的架构演进幻灯片](./images/4.jpg)
 
 2020s：数据湖时代，「最少成功的想法」卷土重来
 
@@ -61,15 +61,15 @@ Andy Pavlo 在 Rows & Columns Summit 现场开场
 
 Andy 在演讲中把目前市场上的 HTAP 拓扑归纳为三种形态：
 
-![5.jpg](./images/5.jpg)
+![三种 HTAP 拓扑的数据流与存储关系图](./images/5.jpg)
 
 三种 HTAP 拓扑：托管双副本、读取时合并、双引擎共享一份数据
 
 **OLTP 为主、OLAP 为辅，维护两份数据**（Two Copies, Managed）：如 TiDB、Google F1 Lightning、ClickHouse；
 
-**读取时将 OLTP 数据转化为 OLAP 优化存储**（Read-Time Merge）：如 Postgres 插件 pg_mooncake；
+**后台将数据写出为 Parquet 列存，分析查询时再合并读取内存中的最新变更与已落盘数据**（Read-Time Merge）：如 Postgres 插件 pg_mooncake；
 
-**基于数据湖的双引擎方案**（Two Engines, One Copy）：如 Databricks Lakehouse。
+**基于数据湖的双引擎方案**（Two Engines, One Copy）：如 Databricks LTAP（Lakebase Postgres 承担 OLTP，Lakehouse//RT 承担 OLAP）。
 
 这些方案各有优劣，但在矩阵起源看来——**无论从架构扩展性还是易用性看，面对即将到来的大规模 Agent 负载，它们都是过时的设计，需要被重新发明（reinvent）。**
 
@@ -91,7 +91,7 @@ MatrixOne 于 2021 年开始设计研发，从第一天起就选择了不同的�
 
 Andy 在演讲结尾也给了一个预言：2030 年代，数据库将进一步走向统一，而推动力正是资源解耦与加速器（GPU、CXL 内存）。
 
-![6.jpg](./images/6.jpg)
+![2030 年代数据库在资源解耦与 GPU 加速驱动下进一步统一的预测视图](./images/6.jpg)
 
 2030s「The Glorious Future」：资源解耦与 GPU 加速驱动的进一步统一
 
