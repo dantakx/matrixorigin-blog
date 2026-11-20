@@ -19,7 +19,7 @@ translations:
 
 **OLTP 与 OLAP，到底合还是分？**
 
-Opening Keynote 交给时任 ClickHouse Labs 负责人 Andy Pavlo——CMU 数据库教授、数据库行业最受欢迎的布道者之一。同台的还有 DuckDB 创始人 Hannes Mühleisen、Google、OpenAI、Snowflake、Databricks 的一线系统专家，议程从 Apache Iceberg 的互操作层之争一直聊到 OpenAI 的内部数据 Agent 如何在约 7 万个数据集中查找与分析数据。可以说，HTAP 领域最有发言权的人，那一天都在现场。
+Opening Keynote 交给时任 ClickHouse Labs 负责人 Andy Pavlo——CMU 数据库教授、数据库行业最受欢迎的布道者之一。同台的还有 DuckDB 创始人 Hannes Mühleisen、Google、OpenAI、Snowflake、Databricks 的一线系统专家，议程从 Apache Iceberg 的互操作层之争一直聊到 OpenAI 的 7 万数据集治理。可以说，HTAP 领域最有发言权的人，那一天都在现场。
 
 Andy Pavlo 的演讲依旧风趣幽默，其标题是「Broken Dreams. Broken Promises. Broken Marriages.（破碎的梦想、破碎的承诺、破碎的婚姻）」，副标题则是正题：60 年事务与分析负载的「混搭」史。
 
@@ -67,9 +67,9 @@ Andy 在演讲中把目前市场上的 HTAP 拓扑归纳为三种形态：
 
 **OLTP 为主、OLAP 为辅，维护两份数据**（Two Copies, Managed）：如 TiDB、Google F1 Lightning、ClickHouse；
 
-**后台将数据写出为 Parquet 列存，分析查询时再合并读取内存中的最新变更与已落盘数据**（Read-Time Merge）：如 Postgres 插件 pg_mooncake；
+**读取时将 OLTP 数据转化为 OLAP 优化存储**（Read-Time Merge）：如 Postgres 插件 pg_mooncake；
 
-**基于数据湖的双引擎方案**（Two Engines, One Copy）：如 Databricks LTAP（Lakebase Postgres 承担 OLTP，Lakehouse//RT 承担 OLAP）。
+**基于数据湖的双引擎方案**（Two Engines, One Copy）：如 Databricks Lakehouse。
 
 这些方案各有优劣，但在矩阵起源看来——**无论从架构扩展性还是易用性看，面对即将到来的大规模 Agent 负载，它们都是过时的设计，需要被重新发明（reinvent）。**
 

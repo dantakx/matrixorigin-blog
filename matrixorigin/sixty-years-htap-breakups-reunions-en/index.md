@@ -19,7 +19,7 @@ At this year's inaugural Rows & Columns Summit in San Francisco, held at the Con
 
 **OLTP and OLAP: together or apart?**
 
-The Opening Keynote went to Andy Pavlo, then head of ClickHouse Labs — a CMU database professor and one of the most beloved evangelists in the database world. Sharing the stage were DuckDB founder Hannes Mühleisen and leading systems experts from Google, OpenAI, Snowflake, and Databricks. The agenda ranged from the interoperability-layer debates around Apache Iceberg all the way to how OpenAI's internal data agents search and analyze across its roughly 70,000 datasets. In short, everyone with real authority over HTAP was in the room that day.
+The Opening Keynote went to Andy Pavlo, then head of ClickHouse Labs — a CMU database professor and one of the most beloved evangelists in the database world. Sharing the stage were DuckDB founder Hannes Mühleisen and leading systems experts from Google, OpenAI, Snowflake, and Databricks. The agenda ranged from the interoperability-layer debates around Apache Iceberg all the way to OpenAI's governance of a 70,000-dataset corpus. In short, everyone with real authority over HTAP was in the room that day.
 
 Andy Pavlo's talk was as witty as ever. Its title: "Broken Dreams. Broken Promises. Broken Marriages." — with the subtitle delivering the real subject: 60 years of "mixing" transactional and analytical workloads.
 
@@ -67,9 +67,9 @@ Three HTAP topologies: Two Copies Managed, Read-Time Merge, and Two Engines One 
 
 **OLTP-first with OLAP as an add-on, maintaining two copies of data** (Two Copies, Managed): e.g., TiDB, Google F1 Lightning, ClickHouse;
 
-**Writing out columnar Parquet in the background, then merging the latest in-memory changes with the flushed data at analytical query time** (Read-Time Merge): e.g., the Postgres extension pg_mooncake;
+**Transforming OLTP data into OLAP-optimized storage at read time** (Read-Time Merge): e.g., the Postgres extension pg_mooncake;
 
-**Dual-engine designs built on data lakes** (Two Engines, One Copy): e.g., Databricks LTAP (Lakebase Postgres for OLTP, Lakehouse//RT for OLAP).
+**Dual-engine designs built on data lakes** (Two Engines, One Copy): e.g., the Databricks Lakehouse.
 
 Each approach has its trade-offs. But from MatrixOrigin's perspective — **whether you look at architectural scalability or ease of use, these designs are outdated for the large-scale Agent workloads that are coming, and they need to be reinvented.**
 
